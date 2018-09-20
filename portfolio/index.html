@@ -25,70 +25,122 @@
 	
 </head>
 <body>
-<div class="background">
-	<div class="container">
-		<div class="row">
-			<nav class="navLeft col-lg-2 col-lm-2 col-sm-2  ">
-				<div class="logo"><a href="index.html"> <img src="./assets/img/me.png" alt="logoMe"></a> </div>
-				<ul class="navlist">
-					<li><a href="#banner">HOME</a></li>
-					<li><a href="#about">ABOUT</a></li>
-					<li><a href="#projects">PROJECTS</a></li>
-					<li><a href="#contact">CONTACT</a></li>
-				</ul>
-			</nav>
-			<main class="mainRight col-lg-10 col-lm-10 col-sm-10">
-				<section class="about">
-					<div class="row aboutrow clear">
-						<div class="section col-lg-6">
-							<div class="jumbotron">
-								<h1 class="display-4" id="Jon">about me</h1>
-								<p class="lead">“about me.about meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout ”</p>
-							</div>
-						</div>
-						<div class="section col-lg-6">
-							<img src="./assets/img/me.png" height="400px;" width="400px;"> <!-- photo of me -->
-						</div>
-					</div>
-				</section>
-<hr>
-				<section class="project">
-					<div class="projectrow col-lg-12">
-						<h2>Project</h2>
-					</div>
-				</section>	
-			</main>
+<!-- example of navbars -->
+	
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="index.html">JD</a>
+	
+<!-- burger -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=#navbarContent>
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a href="#" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">About</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Contact</a>
+				</li>
+				<li class="nav-item dropdown">
+       				 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Social Media 
+	          	        <div class="dropdown-menu" aria-labelledby="navbarDropdown" data-target="#drop-menu">
+				          <a class="dropdown-item" href="https://www.facebook.com/" target="_blank">Facebook</a>
+				          <a class="dropdown-item" href="https://twitter.com/" target="_blank">Twitter</a>
+				          <a class="dropdown-item" href="https://www.instagram.com/" target="_blank">Instagram</a>
+				        </div>
+				     </a>
+      			</li>
+			</ul>
+		</div>
+	</nav>
+<div class="container pt-5">
+	<div class="row aboutRow">
+		<div class="section col-lg-12 col-md-12 col-sm-12">
+		<!-- jumbotron -->
+			<div class="jumbotron row h-150">
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<h1 class="display-4" id="aboutText" align="center">about me</h1>
+					<p class="lead">“about me.about meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meabout meaboutmeabout meabout meabout meaboutmeabout meabout meabout meaboutmeabout meabout meabout meaboutmeabout meabout meabout meaboutmeabout meabout meabout meabout meabout meabout meabout meaboutmeabout meabout meabout”</p>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6" id="aboutImg">
+					<img src="./assets/img/me.png" align="center">
+				</div>
+			</div>
+		</div>	
+	</div>
+	<hr>
+	<div class="row aboutfactsRow">
+		<div class="section col-lg-12 col-md-12 col-sm-12">
+		<!-- jumbotron -->
+			<div class="jumbotron row h-100">
+				<div class="col-lg-9 col-md-9 col-sm-9" id="aboutImgfacts">
+					<img src="./assets/img/factsimgAdobo.jpg" align="left">
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3">
+					<h2 id="aboutText" align="left">random facts</h2>
+					<p class="fact" align="left">“I like adobo”</p>
+					<p class="fact" align="left">“I like adobo”</p>
+					<p class="fact" align="left">“I like adobo”</p>
+					<p class="fact" align="left">“I like adobo”</p>
+					<p class="fact" align="left">“I like adobo”</p>
+					<p class="fact" align="left">“I like adobo”</p>
+			</div>
+		</div>
 		</div>
 	</div>
-<footer class="contact">
-<small> created & designed by | Jonald P. Damaso</small>
-</footer>	
+	<div class="row aboutskillsRow">
+		<div class="section col-lg-12 col-md-12 col-sm-12">
+		<!-- jumbotron -->
+			<div class="jumbotron row h-100">
+
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<h3>Skills</h3>
+					<p>HTML</p>
+					<div class="progress">
+						<div class="progress-bar" style="width: 100%">Advance
+						</div>
+					</div>
+					<p>CSS</p>
+					<div class="progress">
+						<div class="progress-bar" style="width: 50%">Intermediate
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<footer align="center">
+	<div class="row aboutfooterRow">
+		<div class="section col-lg-12 col-md-12 col-sm-12">
+			<div class="row">
+				<div class="leftfooter col-lg-6 col-md-6 col-sm-6">
+					<small> created & designed by | Jonald P. Damaso</small>
+				</div>
+				<div class="rightfooter col-lg-6 col-md-6 col-sm-6">
+				<p>
+					<a href="https://www.facebook.com/jonald.damaso?ref=bookmarks" target="_blank"><i class="fab fa-facebook-square"></i>
+					</a>
+					<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+					<a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> 
+					<a href="https://github.com/" target="_blank"> <i class="fab fa-github"></i></a>
+				</p>	
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
 
 
 	

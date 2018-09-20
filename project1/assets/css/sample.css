@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.jumbotron {
+	background-color: #141414;
+	height: 90vh;
+	border-radius: 0;
+}
+
+#about-landing {
+	color:#f2f2f2;
+	font-size: 10vh;
+	padding-top: 20vh;
+	letter-spacing: 5px;
+}
+
+
+#mission {
+	height: 100%;
+	background-color: #141414;
+	color:#f2f2f2;
+}
+
+#mission {
+	height: 100%;
+	background-color: #141414;
+	color:#f2f2f2;
+}
+
+#about-tags {
+	font-weight: bold;
+}
+
