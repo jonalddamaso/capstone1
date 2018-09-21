@@ -22,21 +22,21 @@ body {
 	/*background-color: lightgrey;*/
 }
 
-footer:hover {
+/*footer:hover {
 	opacity: 1;
-}
+}*/
 footer {
 	height: 5%;
 	width: 100%;
 	padding-top: 5%; 
-	opacity: 0;
+	/*opacity: 0;*/
 }
 
 /*sample*/
-nav a:hover {
+/*nav a:hover {
 	background-color: #EAE2B7;
 	color: #1B645C;
-	
+	*/
 }
 nav:hover {
 	/*background-color: transparent;*/
@@ -61,24 +61,143 @@ nav a {
     font-size: 17px;
 }
 
-/* Change the color of links on hover 
-nav a:hover {
-    background-color: #ddd;
-    color: black;
+#menuModal {
+	height: 25%;
+	width: 100%;
 }
 
-/* Add a color to the active/current link */
-/*nav a.active {
-    background-color: #4CAF50;
-    color: white;
-}*/
-/*sample*/
 
 #navpadding {
 	padding-top: 0;
 	padding-bottom: 0;
 }
+#navlogo {
+	margin-right: 0;
+}
 
 img:hover {
 	shape-image-threshold: 
+}
+
+
+header {
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row wrap;
+  ul {
+    padding: 1.2em 0 0.5em;
+  }
+  span {
+    padding: 0 0 0 0.5em;
+  }
+  span, i {
+    color: #2B2D42;
+  }
+  i:nth-of-type(2) {
+    cursor: pointer;
+  }
+}
+.row {
+  width: 100%;
+  justify-content: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+}
+.product {
+  box-shadow: 1px 5px 15px #CCC;
+  width: 15em;
+  height: auto;
+  border-radius: 3px;
+  padding: 2em;
+  margin: 1em;
+  overflow: hidden;
+  position: relative;
+  flex: auto;
+  &--blue {
+    @extend .product;
+    @include diagBg($blue-card);
+  }
+  &--orange {
+    @extend .product;
+    @include diagBg($orange-card);
+  }
+  &--red {
+    @extend .product;
+    @include diagBg($red-card);
+  }
+  &--green {
+    @extend .product;
+    @include diagBg($green-card);
+  }
+  &--yellow {
+    @extend .product;
+    @include diagBg($yellow-card);
+  }
+  &--pink {
+    @extend .product;
+    @include diagBg($pink-card);
+  }
+  img {
+    max-width: 100%;
+    height: auto !important;
+    text-align: center;
+  }
+  &_inner {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    p {
+      color: rgba(255, 255, 255, 0.9);
+    }
+    button {
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      color: #FFF;
+      border-radius: 3px;
+      padding: 1em 3em;
+      margin: 1em 0 0 0;
+      background: none;
+      cursor: pointer;
+      transition: background ease-in .25s;
+      &:hover {
+        background: rgba(255, 255, 255, 1);
+        color: #2B2D42;
+      }
+      &:before {
+        font-family: FontAwesome;
+        content: '\f07A';
+        color: #FFF;
+        position: absolute;
+        font-size: 1.5em;
+        margin: 0 -1.5em;
+      }
+      &:hover:before {
+        color: #2B2D42;
+      }
+    }
+  }
+  &_overlay {
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-500px);
+    opacity: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      color: rgba(43, 45, 66, 0.7);
+      font-size: 1.2em;
+      margin: 1em 0;
+    }
+    i {
+      color: rgba(43, 45, 66, 0.7);
+      font-size: 1.5em;
+    }
+  }
 }
