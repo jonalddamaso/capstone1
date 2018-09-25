@@ -4,16 +4,16 @@
 	box-sizing: border-box;
 }
 
-body {
-	/*background-image: url("./assets/img/tapsilog.jpg");
+/*body {
+	background-image: url("./assets/img/tapsilog.jpg");
 	background-repeat: none;
-	background-size: cover;*/
+	background-size: cover;
 	background-color: #EAE2B7;
-/*	opacity: 0;*/
+	opacity: 0;
 }
 body:hover {
 	opacity: 1;
-}
+}*/
 
 .container {
 	/*height: 1000px;*/
@@ -26,11 +26,6 @@ body:hover {
 
 #locmap {
 	width: 100%;
-}
-
-.fa-times-circle {
-	color: white;
-	padding-top: 10%;
 }
 
 footer {
@@ -68,11 +63,18 @@ nav a {
     font-size: 17px;
 }
 
-#navlogo {
-	color: #1B645C;
-	font-family: 'Pacifico', cursive;
-	text-shadow: 2px 2px #FDFFFC;
+/* Change the color of links on hover 
+nav a:hover {
+    background-color: #ddd;
+    color: black;
 }
+
+/* Add a color to the active/current link */
+/*nav a.active {
+    background-color: #4CAF50;
+    color: white;
+}*/
+/*sample*/
 
 #navpadding {
 	padding-top: 0;

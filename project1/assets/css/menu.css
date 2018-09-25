@@ -85,6 +85,63 @@ i {
 	letter-spacing: 12px;
 }
 
+.modal-content {
+	 background:rgba(253,255,252,0.25);
+    opacity:1;
+	color: white;
+	background-color: #7A460B;
+
+}
+.modal-total {
+	background-color: #7A460B;
+}
+
+.productmodal {
+	list-style-type: none;
+	text-align: left;
+}
+
+.productprice {
+	list-style-type: none;
+	text-align: right;
+}
+.productquantity {
+	list-style-type: none;
+	text-align: right;
+}
+.grandname {
+	list-style-type: none;
+	text-align: right;
+
+}
+.grandprice {
+	list-style-type: none;
+	text-align: right;
+}
+.productsubprice {
+	list-style-type: none;
+	text-align: right;
+}
+.productsub {
+	list-style-type: none;
+	text-align: right;
+}
+hr {
+	background-color:white;
+}
+
+#checkout:hover {
+	background: blue;
+	color: white;
+}
+.ordersum:hover {
+	color: white	;
+}
+.ordersum {
+	color: black;
+}
+
+
 
 /*Animate.css style
 h1 {
