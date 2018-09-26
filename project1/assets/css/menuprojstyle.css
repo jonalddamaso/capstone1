@@ -9,7 +9,9 @@ body {
 	
 }
 
-
+footer i{
+  color: gray;
+}
 .container {
 	text-align: center;
 	color: gray;
@@ -18,14 +20,17 @@ body {
 /*border: 1px solid red;*/
 }
 
-/*footer:hover {
-	opacity: 1;
-}*/
+.cart-count {
+  text-align: right;
+
+}
+
 footer {
 	height: 5%;
 	width: 100%;
 	padding-top: 5%; 
   /*border: 1px solid red;*/
+  background-color: #FA7921;
 }
 
 /*sample*/

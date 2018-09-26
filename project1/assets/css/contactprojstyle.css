@@ -19,9 +19,10 @@ body:hover {
 	/*height: 1000px;*/
 	text-align: center;
 	color: gray;
-	padding-top: 7%;
+	padding-top: 4%;
 	height: 85%;
-	/*background-color: lightgrey;*/
+	background-color: transparent;
+	margin-top: 10%;
 }
 
 #locmap {
@@ -33,11 +34,7 @@ body:hover {
 	padding-top: 10%;
 }
 
-footer {
-	height: 5%;
-	width: 100%;
-	padding-top: 5%; 
-}
+
 
 /*sample*/
 nav a:hover {
@@ -79,15 +76,27 @@ nav a {
 	padding-bottom: 0;
 }
 
-footer:hover {
+/*footer:hover {
 	opacity: 1;
-}
+}*/
 footer {
-	height: 5%;
+	height: 3%;
 	width: 100%;
-	padding-top: 5%; 
-	opacity: 0;
+	background-color: #FA7921;
 	
+}
+
+footer a {
+	letter-spacing: 20px;
+	color:gray;
+}
+footer a:hover {
+	letter-spacing: 20px;
+	color:white;
+	background: transparent;
+}
+footer:hover {
+	background: transparent;
 }
 #leftfooter {
 	text-align: center;

@@ -4,21 +4,32 @@
 	box-sizing: border-box;
 }
 
-
+body {
+	background-color: #B5B1AF;
+}
 .container {
 	/*height: 1000px;*/
 	text-align: center;
 	color: gray;
-	padding-top: 7%;
-	height: 85%;
-	/*background-color: lightgrey;*/
+	padding-top: 5%;
+	margin-top: 3%;
+	height: 80vh;
+	width: 100%;
+	/*background-color: #B5B1AF;*/
 }
 
 .reviewsrow {
-	height: 80%;
+	height: 60vh;
 	width:100%;
+	background-color: transparent;
 }
 
+.menuheader {
+	height: 20vh;
+	width: 100%;
+	color: white;
+	background-color: transparent;
+}
 
 #navlogo {
 	color: #1B645C;
@@ -41,6 +52,9 @@ nav span:active #open{
 	
 	padding-top: 10%;
 }
+
+
+
 
 
 
@@ -81,11 +95,11 @@ nav a {
 
 #leftfooter {
 	text-align: center;
-	padding-top: 1%;
+	/*padding-top: 1%;*/
 }
 #rightfooter {
 	text-align: center;
-	padding-top: 1%;
+	/*padding-top: 1%;*/
 }
 
 /*footer:hover {
@@ -97,12 +111,23 @@ nav a {
 }
 
 footer {
-	height: 5%;
+	height: 3%;
 	width: 100%;
-	/*padding-top: 5%; */
-	/*opacity: 0;*/
-	background-color: orange;
+	background-color: #FA7921;
+	
+}
 
+footer a {
+	letter-spacing: 20px;
+	color:gray;
+}
+footer a:hover {
+	letter-spacing: 20px;
+	color:gray;
+	background: transparent;
+}
+footer:hover {
+	background: transparent;
 }
 
 
