@@ -108,11 +108,14 @@ header {
     cursor: pointer;
   }
 }
-.row {
-  width: 100%;
-  justify-content: flex-start;
-  display: flex;
-  flex-flow: row wrap;
+.leftfooter {
+  text-align: center;
+}
+.rightfooter {
+  text-align: center;
+}
+.backtotop {
+  text-align: center;
 }
 /*.product {
   box-shadow: 1px 5px 15px #CCC;
