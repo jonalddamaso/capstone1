@@ -26,9 +26,9 @@ footer i{
 }
 
 footer {
-	height: 5%;
+	height: 6%;
 	width: 100%;
-	padding-top: 5%; 
+	/*padding-top: 5%; */
   /*border: 1px solid red;*/
   background-color: #FA7921;
 }

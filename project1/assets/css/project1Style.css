@@ -16,31 +16,13 @@ body {
 	clear:both;
 }
 
-header a {
-    text-align: center;
- 	 padding-bottom: 1%;
-    text-decoration: none;
-    color: #FF9216;
-	font-family: 'Comfortaa', cursive;
-	/*text-shadow: 2px 2px #FDFFFC;*/
-}
 
-header a:hover {
-    text-align: center;
-   	padding-bottom: 1%;
-    text-decoration: none;
-    color: white;
-	font-family: 'Comfortaa', cursive;
-	/*text-shadow: 2px 2px #FDFFFC;*/
-	 line-height: 20px;
-}
 
 
 .container {
-	height: 100vh;
+	height: 100%;
 	color: black;
 	margin-top: 2%;	
-	/*margin-bottom: 1%;*/
 	width: 80%;
 	border:2px solid #EAE2B7;
 	margin-left: auto;
@@ -50,64 +32,19 @@ header a:hover {
     background:rgba(253,255,252,0.25);
     opacity:1;
 }
+
 #sayingTodayrow {
-    width: 80%;
-    height: 20vh;
-    /*border:2px solid red;*/
+    width: 100%;
+    height: 13vh;
+    border:2px solid red;
     color:white;
     text-align: center;
-    margin-top: 1%;
-    padding-top: 3%;
+    margin-top: 3%;
+    /*padding-top: 1%;*/
     opacity: 1; 
  }
 
- #mediarow{
- 	width: 80%;
- 	height: 45vh;
- 	/*border:2px solid red;*/
- 	text-align: center;
- 	opacity: 1;
- 	padding-top: 1%;	
- }
- #nav2nd {
- 	height: 5vh;
-	width: 80%;
-	text-align: center;	
-	 color:white;
-	 /*border:2px solid red;*/
-      opacity: 1;
-      line-height: 20px;
-}
-
-
-#contactrow {
-    width: 80%;
-    height: 20vh;
-    /*border:2px solid red;*/
-    color:white;
-    text-align: center;
-    margin-top: 0.5%;
-    /*padding-top: 2%;*/
-    opacity: 1; 
- }
-
-#aboutfooter {
-	height: 5vh;
-	width: 80%;
-	 color:white;
-	 /*border:2px solid red;*/
-     text-align: center;
-    margin-top: 1%;
-    padding-top: 1%;
-    opacity: 1;
-}
-
-#navpadding {
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
-#you {
+ #you {
 	color: #FF9216;
 	font-family: 'Pacifico', cursive;
 	text-shadow: 2px 2px #FDFFFC;
@@ -115,15 +52,101 @@ header a:hover {
 #everyone {
 	font-family: 'Comfortaa', cursive;
 }
-#navLogo {
-	color: #7A460B;
+
+
+ #mediarow{
+ 	width: 100%;
+ 	height: 75vh;
+ 	border:2px solid red;
+ 	text-align: center;
+ 	margin-top: 0.2%;
+ 	opacity: 1;
+ 	padding-top: 0.2%;	
+ }
+
+
+#contactrow {
+    width: 100%;
+    height: 33vh;
+    border:2px solid red;
+    color:white;
+    text-align: center;
+    margin-top: 0.2%;
+    /*padding-top: 2%;*/
+    opacity: 1; 
+ }
+
+#aboutfooter {
+	height: 4vh;
+	width: 100%;
+	 color:white;
+	 border:2px solid red;
+     text-align: center;
+    margin-top: 1%;
+    /*padding-top: 1%;*/
+    opacity: 1;
+}
+#aboutfooter i {
+	color: white;
+}
+
+#navlogo {
+	color: #1B645C;
 	font-family: 'Pacifico', cursive;
 	text-shadow: 2px 2px #FDFFFC;
 }
+nav span #closed{
+	display: none;
 
+}
+nav #open:active #closed{
+	display: block;
+}
+
+nav span:active #open{
+	display: none;
+}
+
+
+/*sample*/
+nav a:hover {
+	/*background-color: transparent;*/
+	color: #FF9F1C;
+
+}
+nav:hover {
+	/*background-color: transparent;*/
+	color: #264653;
+	background: transparent;
+}
+
+/* Add a black background color to the top navigation */
+nav {
+    background-color: #FF9F1C;
+    backface-visibility: visible;
+    overflow: hidden;
+}
+
+ /*Style the links inside the navigation bar */
+nav a {
+    float: left;
+    color: #1B645C;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navpadding {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+
+/*
 i {
 	color: #FDFFFC;
-}
+}*/
 
 .maplogo {
 	padding-top: 3%;
@@ -131,16 +154,16 @@ i {
 
 }
 #locmap {
-	padding-top: 8%;
+	padding-top: 1%;
 }
 
 
 .centercontact {
-list-style-type: none;
+
 font-family: 'Comfortaa', cursive;
-font-size: 10px;
+font-size: 1rem;
 text-align: left;
-padding-top: 3%;
+/*padding-top: 3%;*/
 }
 
 .social {
@@ -165,40 +188,43 @@ padding-top: 3%;
 }
 
 
-/*mobile phone iphone*/
-@media only screen and (max-width: 375px){
-	
-		.mediarow {
-		padding-top: 1%;
 
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+@-ms-viewport {
+  width: device-width ;
+}
+
+
+
+
+
+@media screen and (min-width: 321px) and (max-width: 1024px) {
+
+	.mediarow {
+		padding-top: 1%;
 	}
+	
 	#you {
-		font-size: 10px;
+		font-size: 2rem;
 	}
 	#everyone {
-		font-size: 5px;
+		font-size: 1rem;
 	}
 
 	#sayingTodayrow {
-    width: 80%;
-    height: 30vh;
-    /*border:2px solid red;*/
-    color:white;
+    width: 100%;
+    height: 12vh;
+   color:white;
     text-align: center;
-    margin-top: 1%;
-    padding-top: 2%;
+    margin-top: 12%;
+  
     opacity: 1; 
  	}
 
- 	 #nav2nd {
- 	height: 5vh;
-	width: 50%;
-	text-align: center;	
-	 color:white;
-	 /*border:2px solid red;*/
-      opacity: 1;
-      font-size: 10px;
-	}
+ 	
 
 	header a {
     text-align: center;
@@ -206,7 +232,7 @@ padding-top: 3%;
     text-decoration: none;
     color: #FF9216;
 	font-family: 'Comfortaa', cursive;
-	/*text-shadow: 2px 2px #FDFFFC;*/
+	
 	 font-size: 10px;
 	}
 
@@ -216,35 +242,33 @@ padding-top: 3%;
     text-decoration: none;
     color: white;
 	font-family: 'Comfortaa', cursive;
-	/*text-shadow: 2px 2px #FDFFFC;*/
+	
 	 font-size: 10px;
 	}
 
 	 #mediarow{
-	 	width: 80%;
-	 	height: 12vh;
-	 	/*border:2px solid red;*/
+	 	width: 100%;
+	 	height: 25vh;
 	 	text-align: center;
 	 	opacity: 1;
 	 	padding-top: 4%;	
 	 }
 
 	 #contactrow {
-    width: 80%;
-    height: 55vh;
-    /*border:2px solid red;*/
+    width: 100%;
+    height: 95vh;
+   
     color:white;
     text-align: center;
     margin-top: 0.5%;
-    /*padding-top: 2%;*/
     opacity: 1; 
  	}
 
  	#aboutfooter {
 	height: 15vh;
-	width: 80%;
+	width: 100%;
 	 color:white;
-	 /*border:2px solid red;*/
+	
      text-align: center;
     margin-top: 1%;
     padding-top: 1%;
@@ -255,8 +279,8 @@ padding-top: 3%;
 	height: 95vh;
 	color: black;
 	margin-top: 3%;	
-	/*margin-bottom: 1%;*/
-	width: 80%;
+	
+	width: 90%;
 	border:2px solid #EAE2B7;
 	margin-left: auto;
 	margin-right: auto;
@@ -271,39 +295,31 @@ padding-top: 3%;
 
 /*tablet*/
 
-@media only screen and (max-width: 1024px){
+/*@media only screen and (max-width: 1024px){
 	
 	.mediarow {
 		padding-top: 1%;
 
 	}
 	#you {
-		font-size: 4rem;
+		font-size: 2rem;
 	}
 	#everyone {
-		font-size: 2rem;
+		font-size: 1rem;
 	}
 
 	#sayingTodayrow {
-    width: 100%;
-    height: 12vh;
-    /*border:2px solid red;*/
+    width: 90%;
+    height: 10vh;
+ 
     color:white;
     text-align: center;
-    margin-top: 2%;
-    padding-top: 2%;
+    margin-top: 12%;
+  
     opacity: 1; 
  	}
 
- 	 #nav2nd {
- 	height: 10vh;
-	width: 50%;
-	text-align: center;	
-	 color:white;
-	 /*border:2px solid red;*/
-      opacity: 1;
-      font-size: 2rem;
-	}
+ 
 
 	header a {
     text-align: center;
@@ -311,7 +327,7 @@ padding-top: 3%;
     text-decoration: none;
     color: #FF9216;
 	font-family: 'Comfortaa', cursive;
-	/*text-shadow: 2px 2px #FDFFFC;*/
+
 	 font-size: 2rem;
 	}
 
@@ -321,35 +337,35 @@ padding-top: 3%;
     text-decoration: none;
     color: white;
 	font-family: 'Comfortaa', cursive;
-	/*text-shadow: 2px 2px #FDFFFC;*/
+	
 	font-size: 2rem;
 	}
 
 	 #mediarow{
-	 	width: 100%;
+	 	width: 90%;
 	 	height: 30vh;
-	 	/*border:2px solid red;*/
+	 	
 	 	text-align: center;
 	 	opacity: 1;
 	 	padding-top: 5%;	
 	 }
 
 	 #contactrow {
-    width: 100%;
+    width: 90%;
     height: 13vh;
-    /*border:2px solid red;*/
+  
     color:white;
     text-align: center;
     margin-top: 2%;
-    /*padding-top: 2%;*/
+  
     opacity: 1; 
  	}
 
  	#aboutfooter {
 	height: 4vh;
-	width: 100%;
+	width: 90%;
 	 color:white;
-	 /*border:2px solid red;*/
+	
      text-align: center;
     margin-top: 1%;
     padding-top: 1%;
@@ -360,7 +376,7 @@ padding-top: 3%;
 	height: 67vh;
 	color: black;
 	margin-top: 1%;	
-	/*margin-bottom: 1%;*/
+	
 	width: 80%;
 	border:2px solid #EAE2B7;
 	margin-left: auto;
@@ -375,51 +391,18 @@ padding-top: 3%;
 		line-height: 15px;
 		
 	}
-	.contacth1 {
-		font-size:1rem;
-	}
+	
 
 
-}
+}*/
 
 
 
 
 /*tablet*/
 
-@media only screen and (max-width: 360px){
+/*@media only screen and (max-width: 360px){
 	
-	.mediarow {
-		padding-top: 1%;
-
-	}
-	#you {
-		font-size: 2rem;
-	}
-	#everyone {
-		font-size: 15px;
-	}
-
-	#sayingTodayrow {
-    width: 80%;
-    height: 18vh;
-    /*border:2px solid red;*/
-    color:white;
-    text-align: center;
-    margin-top: 2%;
-    padding-top: 2%;
-    opacity: 1; 
- 	}
-
- 	 #nav2nd {
- 	height: 8vh;
-	width: 50%;
-	text-align: center;	
-	 color:white;
-	 /*border:2px solid red;*/
-      opacity: 1;
-     font-size: 10px;
-	}
 
 	header a {
     text-align: center;
@@ -427,7 +410,7 @@ padding-top: 3%;
     text-decoration: none;
     color: #FF9216;
 	font-family: 'Comfortaa', cursive;
-	/*text-shadow: 2px 2px #FDFFFC;*/
+	
 	font-size: 10px;
 	}
 
@@ -437,35 +420,68 @@ padding-top: 3%;
     text-decoration: none;
     color: white;
 	font-family: 'Comfortaa', cursive;
-	/*text-shadow: 2px 2px #FDFFFC;*/
+	
 	font-size: 10px;
 	}
 
+	.mediarow {
+		padding-top: 1%;
+	}
+	#you {
+		font-size: 2rem;
+	}
+	#everyone {
+		font-size: 15px;
+	}
+
+	#sayingTodayrow {
+    width: 90%;
+    height: 12vh;
+ 
+    color:white;
+    text-align: center;
+    margin-top: 12%;
+   
+    opacity: 1; 
+ 	}
+
+ 	 #nav2nd {
+ 	height: 8vh;
+	width: 50%;
+	text-align: center;	
+	 color:white;
+	
+      opacity: 1;
+     font-size: 10px;
+	}
+
+
+
 	 #mediarow{
-	 	width: 80%;
+	 	width: 90%;
 	 	height: 15vh;
-	 	/*border:2px solid red;*/
+	 	
 	 	text-align: center;
 	 	opacity: 1;
 	 	padding-top: 4%;	
 	 }
 
 	 #contactrow {
-    width: 80%;
+    width: 90%;
     height: 56vh;
-    /*border:2px solid red;*/
+    
     color:white;
     text-align: center;
     margin-top: 2%;
-    /*padding-top: 2%;*/
+   
     opacity: 1; 
  	}
 
  	#aboutfooter {
 	height: 20vh;
-	width: 80%;
+	width: 90%;
 	 color:white;
-	 /*border:2px solid red;*/
+
      text-align: center;
     margin-top: 1%;
     padding-top: 1%;
@@ -476,7 +492,7 @@ padding-top: 3%;
 	height: 116vh;
 	color: black;
 	margin-top: 2%;	
-	/*margin-bottom: 1%;*/
+	
 	width: 80%;
 	border:2px solid #EAE2B7;
 	margin-left: auto;
@@ -496,7 +512,7 @@ padding-top: 3%;
 	}
 
 
-}
+}*/
 
 
 /*tablet*/
@@ -609,9 +625,7 @@ padding-top: 3%;
 	#locmap {
 		padding-top: 2%;
 	}
-	.contacth1 {
-		font-size:1rem;
-	}
+	
 
 
 }
